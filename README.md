@@ -12,7 +12,7 @@ Python实现的微博与twitter单向同步工具
 ### Docker
 按照下面步骤设置相关参数，然后执行
 ```
-docker-compose run wb2t
+docker-compose run --rm wb2t
 ```
 ### 手动
 #### 新建APP
