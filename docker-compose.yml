@@ -1,0 +1,10 @@
+version: '3'
+services:
+    wb2t:
+        container_name: "wb2t"
+        image: "nyanim/wb2t"
+        volumes:
+         - "./tokens.py:/home/frank/weibo-twitter-sync-bot/tokens.py"
+         - "./secrets.py:/home/frank/weibo-twitter-sync-bot/secrets.py"
+         - "./time_stamp.txt:/home/frank/weibo-twitter-sync-bot/time_stamp.txt"
+        command: python /home/frank/weibo-twitter-sync-bot/wb.py

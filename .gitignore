@@ -1,0 +1,6 @@
+*.pyc
+*.jpg
+*.png
+tokens.py
+secrets.py
+time_stamp.txt
