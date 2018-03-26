@@ -1,4 +1,4 @@
-#wb2t
+# wb2t
 Python实现的微博与twitter单向同步工具
 
 ## 关于本项目
@@ -10,7 +10,10 @@ Python实现的微博与twitter单向同步工具
 
 ## 部署
 ### Docker
-
+按照下面步骤设置相关参数，然后执行
+```
+docker-compose run wb2t
+```
 ### 手动
 #### 新建APP
 twitter：https://apps.twitter.com/
@@ -26,8 +29,9 @@ sudo -H pip install tweepy
 git clone https://github.com/nyanim/weibo-twitter-sync-bot-public.git
 配置相关的key及access token
 `vim secrects.py`
+
 ```
-# encoding: utf-8
+#encoding: utf-8
 #twitter 
 C_KEY = ""
 C_SECRET = ""
@@ -44,12 +48,14 @@ CALLBACK_URL = '' # callback url
 `python wb_auth.py`
 按照屏幕提示完成认证，屏幕将显示access token和expires in，将这两个值填入tokens.py
 `vim tokens.py`
+
 ```
 #encoding: utf-8
 #sinaweibo access token
 access_token = ''
 expires_in =
 ```
+
 添加crontab
 `crontab -e`
 将wb.py设置为按照你想要的频率执行。
