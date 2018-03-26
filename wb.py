@@ -5,6 +5,10 @@ from tokens import *     #微博授权后的access token
 from functions import *
 from twitterbot import *
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 global exec_dir
 exec_dir = '/home/frank/weibo-twitter-sync-bot/'
 

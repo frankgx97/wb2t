@@ -4,6 +4,10 @@ import urllib
 import os
 from secrets import *
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 global exec_dir
 exec_dir = '/home/frank/weibo-twitter-sync-bot/'
 
