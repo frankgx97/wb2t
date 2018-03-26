@@ -2,7 +2,7 @@
 import tweepy
 import urllib
 import os
-from secrects import *
+from secrets import *
 
 global exec_dir
 exec_dir = '/home/frank/weibo-twitter-sync-bot/'
