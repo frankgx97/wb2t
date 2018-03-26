@@ -27,6 +27,7 @@ sudo -H pip install tweepy
 从远程仓库检出代码
 ```
 git clone https://github.com/nyanim/weibo-twitter-sync-bot-public.git
+```
 配置相关的key及access token
 `vim secrects.py`
 
